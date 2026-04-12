@@ -1,0 +1,27 @@
+Pre setup steps:
+press windows + x; open terminal (admin); paste the following command bellow, wait a couple minutes for it to confirm it is done downloading
+
+
+(winget install -e --id Python.Python.3)
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+This launches it earlier and faster than the Startup folder:
+
+Press Win + R → type taskschd.msc → Enter
+Click "Create Basic Task" → name it ClipboardTyper
+Set trigger to "When I log on"
+Action → "Start a program"
+Program: C:\Users\narad\AppData\Local\Programs\Python\Python312\pythonw.exe
+Arguments: "C:\Users\narad\OneDrive\Desktop\ReversedTypedripWriter.com\clipboard_typer.py" (copy the path of where you put the python program script)
+After creating it, right-click the task → Properties
+Under General tab → set "Configure for: Windows 10" and make sure "Run with highest privileges" is UNCHECKED
+Under the Conditions tab → uncheck "Start only if on AC power"
+Under Settings tab → check "Run task as soon as possible after a scheduled start is missed"
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+once those steps are complete, when you restart your computer the program will pop up in your task tray as a circular green icon: just right click it to get the info to use it.
+additionally if you want to stop typing what you would paste with control + p, just press the escape button on your key board
